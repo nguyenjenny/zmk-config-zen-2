@@ -43,17 +43,17 @@
                 };
 
                 raise_layer {
-                        label = "SYMBOL";
+                        label = "NUM";
 // -----------------------------------------------------------------------------------------
-// |  TAB | -  |  `  |  {  | }  | /  |   |  +  |  7  |  8  |  9  |  *  |  -   |
-// | BKSP | =  |  ~  |  (  | )  | \  |   |  -  |  4  |  5  |  6  |  \  |  `   |
-// | SHFT | +  |  '  |  [  | ]  | |  |   |  0  |  1  |  2  |  3  | "|" |  ~   |
-//                    | CTRL|     | SPC |   | ENT |     | ALT |
+// |  TAB | -  |  `  |  {  | }  | /  |   |  /  |  7  |  8  |  9  |  -  |      |
+// | BKSP | =  |  ~  |  (  | )  | \  |   |  *  |  4  |  5  |  6  |  =  |      |
+// | SHFT | +  |  '  |  [  | ]  | |  |   |  .  |  1  |  2  |  3  |  +  |      |
+//                    | CTRL|     | SPC |   | ENT |  0  | ALT |
                         bindings = <
-   &kp TAB    &kp MINUS  &kp GRAVE  &kp LBRC  &kp RBRC  &kp FSLH  &kp PLUS  &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY &kp MINUS
-   &kp BSPC   &kp EQUAL  &kp TILDE  &kp LPAR  &kp RPAR  &kp BSLH  &kp MINUS &kp N4  &kp N5  &kp N6  &kp BSLH        &kp GRAVE
-   &kp LSHFT  &kp PLUS   &kp SQT    &kp LBKT  &kp RBKT  &kp PIPE  &kp N0    &kp N1  &kp N2  &kp N3  &kp PIPE        &kp TILDE
-                    	     &kp LCTRL &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp TAB    &kp MINUS  &kp GRAVE  &kp LBRC  &kp RBRC  &kp FSLH  &kp FSLH        &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
+   &kp BSPC   &kp EQUAL  &kp TILDE  &kp LPAR  &kp RPAR  &kp BSLH  &kp KP_MULTIPLY &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans
+   &kp LSHFT  &kp PLUS   &kp SQT    &kp LBKT  &kp RBKT  &kp PIPE  &kp DOT         &kp N1  &kp N2  &kp N3  &kp PLUS   &trans
+                    	     &kp LCTRL &trans   &kp SPACE   &kp RET   &kp N0    &kp RALT
                         >;
                 };
         };
